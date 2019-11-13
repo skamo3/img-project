@@ -1,4 +1,4 @@
-﻿# skamo3 README
+# skamo3 README
  
  ## face recognition save at video 
   - 동영상에서 얼굴인식 하는 코드  
