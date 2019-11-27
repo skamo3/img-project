@@ -1,6 +1,15 @@
 # skamo3 README
+
+## 모델 기본 구성
+ - Input shape == 96,96,1
+ - Conv2D - BatchNormalization - ReLU (3단계 3회 반복) - maxpooling - Dropout - GlovalAveragePooling - 'sotfmax' - classification(7)
+ - Layer 진행 8x3 - 32x3 - 64x3 - 128x3 - 256 - 128 - 7
+ - optimizer = Adam
+ - loss Function = sparse_categorical_crossentropy
  
- ## face recognition save at video 
-  - 동영상에서 얼굴인식 하는 코드  
-  -- 문제 1. 하나의 얼굴만 인식 가능  
-  -- 문제 2. 다른 영상도 해봐야겠지만 인식률이 떨어짐 
+ 
+## 1차 TEST
+ - epochs = 60
+ - loss : 0.3132
+ - train accuracy : 0.8855
+ - test accuracy : 0.6439  
